@@ -19,18 +19,7 @@
 Інформування потенційних клієнтів та торгівля товарами
 
 # Основні розділи сайту
-@startsalt
-{
-{T
- + Основні розділи сайту
- ++ Головна сторінка
- +++ Розклад сеансів
- +++ Мої квитки
- +++ Контакти
- +++ Про нас
-}
-}
-@endsalt
+![Site](https://www.plantuml.com/plantuml/png/DSzH2e9040RWzpt5l7S93z45X7gB7j8t2TIE41X4L4SOnCXMnZFySwD-pLZO7UR_PjbDiZmzv5cwoqCHYdMGbU3k5GmZMfWtuYNBDpflCA0NPegFrtwY9Jup7NuOojHhZ5uI6oAKPaBF-Of8gEY8y69Xn0tQXTmuTX6Q5htNFFibk7BMs554xl_kOtgMmA1UXIDNijrlvczy0G00)
 
 
 # Вимоги до дизайну
