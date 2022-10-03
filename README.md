@@ -19,7 +19,7 @@
 Інформування потенційних клієнтів та торгівля товарами
 
 # Основні розділи сайту
-![Site](https://www.plantuml.com/plantuml/png/DSzH2e9040RWzpt5l7S93z45X7gB7j8t2TIE41X4L4SOnCXMnZFySwD-pLZO7UR_PjbDiZmzv5cwoqCHYdMGbU3k5GmZMfWtuYNBDpflCA0NPegFrtwY9Jup7NuOojHhZ5uI6oAKPaBF-Of8gEY8y69Xn0tQXTmuTX6Q5htNFFibk7BMs554xl_kOtgMmA1UXIDNijrlvczy0G00)
+![Site](https://www.plantuml.com/plantuml/png/ROz12i8m44NtESNilKGFuGKAkXCNjhiYjDMbEwM2Y6uyG2YACJKvmvyREHFjJW9P_F_U99CLPRugYtnHcifKKqCJmeKR14Jq2DmHruXuuiuT1ZYIpkB5BM-45NYFYE4BmqhBBIBN0WTuM64KkgdCExpXDD7eW8UWLkE_9l5sbFIfv9m5E18yUZYXFTolE24Yf75UxZ6zwjT9ftDZrdAo-NAMLlq0)
 
 
 # Вимоги до дизайну
