@@ -1,0 +1,61 @@
+header {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    background-color: orange;
+}
+        
+        a.main_link:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        a.about_link:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        a.my_tickets_link:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        a.contacts_link:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        a.movies_link:visited {
+            color: rgb(0, 0, 0);
+        }
+
+        a.main_link:hover,
+        a.main_link:visited,
+        a.main_link:link,
+        a.main_link:active {
+            text-decoration: none;
+        }
+
+        a.about_link:hover,
+        a.about_link:visited,
+        a.about_link:link,
+        a.about_link:active {
+            text-decoration: none;
+        }
+
+        a.contacts_link:hover,
+        a.contacts_link:visited,
+        a.contacts_link:link,
+        a.contacts_link:active {
+            text-decoration: none;
+        }
+
+        a.my_tickets_link:hover,
+        a.my_tickets_link:visited,
+        a.my_tickets_link:link,
+        a:active {
+            text-decoration: none;
+        }
+
+        a.movies_link:hover,
+        a.movies_link:visited,
+        a.movies_link:link,
+        a.movies_link:active {
+            text-decoration: none;
+        }
