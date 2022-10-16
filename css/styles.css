@@ -2,9 +2,35 @@ header {
     text-align: center;
     font-family: 'Montserrat';
     font-size: 22px;
-    background-color: orange;
+    padding: 0px;
+    margin:0px;
 }
-        
+
+div.index_main {
+    background-color: rgb(219, 218, 218);
+    padding: 90px;
+    margin: 90
+}
+
+div.new_releases {
+    text-align: center;
+        font-family: 'Montserrat';
+        font-size: 22px;
+        padding: 0px;
+        margin: 0px;
+}
+
+div.movies_main {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+        /*Робимо так, шоб ссилки завжди буди чорного кольору,
+        та без підкреслення*/ 
         a.main_link:visited {
             color: rgb(0, 0, 0);
         }
@@ -59,3 +85,26 @@ header {
         a.movies_link:active {
             text-decoration: none;
         }
+
+/* Style for Main Movies and their dates*/
+div.main_movies_name {
+color: #f2f2f2;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 160px;
+    width: 100%;
+    text-align: center;
+}
+
+div.main_movies_date {
+    color: #f2f2f2;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    text-align: center;
+}
