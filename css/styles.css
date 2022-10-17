@@ -182,7 +182,7 @@ div.row {
     max-width: 80%;
     margin-left: 150px;
 }
-
+/*
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
 body {
@@ -190,14 +190,14 @@ body {
 }
 
 /* Sticky footer position and size
--------------------------------------------------- */
+-------------------------------------------------- 
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
+    /* Margin bottom by footer height 
     margin-bottom: 300px;
 }
 
@@ -205,11 +205,11 @@ body {
     position: absolute;
     bottom: 0;
     width: 99%;
-    /* Set the fixed height of the footer here */
+    /* Set the fixed height of the footer here 
     height: 300px;
 }
 
-/* Taller footer on small screens */
+/* Taller footer on small screens 
 @media (max-width: 567em) {
     body {
         margin-bottom: 300px;
@@ -221,7 +221,7 @@ body {
 }
 
 /* Sticky footer style and color
--------------------------------------------------- */
+-------------------------------------------------- 
 footer {
     padding-top: 30px;
     background-color: #292c2f;
@@ -247,4 +247,68 @@ footer .form-control {
     resize: none;
     color: #d1d2d2;
     padding: 0.7em 1em;
+}
+*/
+footer {
+    display: grid;
+    grid-template-areas: "logo links"
+        "copyright copyright";
+    background-color: rgb(70, 60, 60);
+    font-size: 14px;
+    padding: 2em 3em;
+}
+
+footer div {
+    color: antiquewhite;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer_logo {
+    grid-area: logo;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.footer_links {
+    grid-area: links;
+    padding: 1em 1em 0 0;
+}
+
+.footer_links ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+
+.footer_links li {
+    display: inline-block;
+    flex: 1;
+}
+
+.footer_copyright {
+    grid-area: copyright;
+    text-align: right;
+    margin-top: 1em;
+    padding: 1em 1em 0 0;
+    border-top: 1px solid darkgray;
+}
+
+.footer_links>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: center;
 }
