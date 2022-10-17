@@ -2,10 +2,136 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />Project HTML
+    <meta charset="UTF-8" />
     <title>Розклад сеансів</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/acc2505e0d.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: 22px;
+        }
+
+       /* Create two equal columns that floats next to each other */
+.column {
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+    </style>
 </head>
 <body>
-    <h1>Розклад сеансів</h1>
+        <header>
+            <h1><a class="main_link" href="./index.html">CinemaFan</a></h1>
+            <nav>
+                <a class="movies_link" href="./movies.html">Фільми</a>
+                <a class="my_tickets_link" href="./my_tickets.html">Мої квитки</a>
+                <a class="contacts_link" href="./contacts.html">Контакти</a>
+                <a class="about_link" href="./about.html">Про нас</a>
+            </nav>
+        </header>
+    <div class="movies_main"><h1>Розклад сеансів</h1>
+    <!--Розклад фільмів-->
+    <!-- Load Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <div class="row">
+        <div class="column">
+            <div class="schedule_poster">
+                <img src="/images/movie_posters/Drive_poster.jpg", style="width:100%; max-width:120px">
+                            <div class="schedule_title">
+                                <h3>Драйв</h3>
+                            </div>
+            </div>
+            <ul class="movie_schedule">Розклад сеансів на сьогодні
+                <li><a href="">10:00</a></li>
+                <li><a href="">12:20</a></li>
+                <li><a href="">14:15</a></li>
+                <li><a href="">16:10</a></li>
+            </ul>
+            <button class="button" id="Buy_tickets" onclick="">Купити Квиток</button>
+        </div>
+
+
+
+
+        <div class="column">
+            <div class="schedule_poster">
+                <img src="/images/movie_posters/The_place_beyond_the_pines_poster.jpg" , style="width:100%; max-width:120px">
+                <div class="schedule_title">
+                    <h5>Місце під <br>соснами</h5>
+                </div>
+            </div>
+            <ul class="movie_schedule">Розклад сеансів на сьогодні
+                <li><a href="">10:00</a></li>
+                <li><a href="">12:20</a></li>
+                <li><a href="">14:15</a></li>
+                <li><a href="">16:10</a></li>
+            </ul>
+            <button class="button" id="Buy_tickets" onclick="">Купити Квиток</button>
+        </div>
+        <div class="column">
+            <div class="schedule_poster">
+                <img src="/images/movie_posters/Blade_runner_2049_poster.jpg" , style="width:100%; max-width:120px">
+                <div class="schedule_title">
+                    <h5>Той, що біжить<br> по лезу</h5>
+                </div>
+            </div>
+            <ul class="movie_schedule">Розклад сеансів на сьогодні
+                <li><a href="">10:00</a></li>
+                <li><a href="">12:20</a></li>
+                <li><a href="">14:15</a></li>
+                <li><a href="">16:10</a></li>
+            </ul>
+            <button class="button" id="Buy_tickets" onclick="">Купити Квиток</button>
+        </div>
+    </div>
+<script>
+
+</script>
+</div>
+
+<footer style="font-family: 'Montserrat';
+    font-size: 22px;">
+    <div class="footer_logo">
+        <div><a href="/">CinemaFun</a></div>
+    </div>
+    <div class="footer_links">
+        <ul>
+            <li><a href="movies.html">Фільми</a></li>
+            <li><a href="my_tickets.html">Мої квитки</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </div>
+    <div class="footer_copyright">
+        <p>@2022 Сервіс онлайн купвілі квитків у кінотеатр CinemaFan <a href="/">cinemafan.com</a></p>
+    </div>
+</footer>
+
 </body>
