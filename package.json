@@ -1,0 +1,26 @@
+{
+  "name": "cinema-tickets-project",
+  "version": "1.0.0",
+  "description": "a website for the sale of cinema tickets",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/sanixto/cinema-tickets-project.git"
+  },
+  "keywords": [
+    "cinema",
+    "tickets"
+  ],
+  "author": "Oleksandr Hakavyi, Bohdan Korsun, Misha Kolomiets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanixto/cinema-tickets-project/issues"
+  },
+  "homepage": "https://github.com/sanixto/cinema-tickets-project#readme"
+}
