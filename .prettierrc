@@ -1,5 +1,6 @@
 {
   "singleQuote": true,
+  "editorconfig": true,
   "trailingComma": "es5",
   "overrides": [
     {
