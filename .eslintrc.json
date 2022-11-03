@@ -3,13 +3,17 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "standard", 
+        "plugin:sonarjs/recommended"
+    ],
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": ["sonarjs"],
     "rules": {
     }
 }
