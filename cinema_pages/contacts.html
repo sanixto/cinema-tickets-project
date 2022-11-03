@@ -1,91 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Контакти</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/acc2505e0d.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/acc2505e0d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-.contacts_container {
-    display: flex;
-    flex-flow: row wrap;
-}
+      .contacts_container {
+        display: flex;
+        flex-flow: row wrap;
+      }
 
-.contacts_container div{
-    flex: 1;
-}
-.form {
-    width:80%;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 120px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative
-}
-input {
-    width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2
-}
-input:focus {
-    border-bottom:2px solid #78788c
-}
-p:before {
-    content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a
-}
-button {
-    float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s
-}
-button:hover{
-    background:#78788c;color:#fff
-}
+      .contacts_container div {
+        flex: 1;
+      }
+      .form {
+        width: 80%;
+        height: 440px;
+        background: #e6e6e6;
+        border-radius: 8px;
+        box-shadow: 0 0 40px -10px #000;
+        margin: calc(50vh - 120px) auto;
+        padding: 20px 30px;
+        max-width: calc(100vw - 40px);
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s;
+        border-bottom: 2px solid #bebed2;
+      }
+      input:focus {
+        border-bottom: 2px solid #78788c;
+      }
+      p:before {
+        content: attr(type);
+        display: block;
+        margin: 28px 0 0;
+        font-size: 14px;
+        color: #5a5a5a;
+      }
+      button {
+        float: right;
+        padding: 8px 12px;
+        margin: 8px 0 0;
+        font-family: 'Montserrat', sans-serif;
+        border: 2px solid #78788c;
+        background: 0;
+        color: #5a5a6e;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      button:hover {
+        background: #78788c;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
-        <header>
-            <h1><a class="main_link" href="./index.html">CinemaFan</a></h1>
-            <nav>
-                <a class="movies_link" href="./movies.html">Фільми</a>
-                <a class="my_tickets_link" href="./my_tickets.html">Мої квитки</a>
-                <a class="contacts_link" href="./contacts.html">Контакти</a>
-                <a class="about_link" href="./about.html">Про нас</a>
-            </nav>
-        </header>
-    <h1 style="text-align: center;
-    font-family: 'Montserrat';
-    font-size: 40px;
-    margin: 80px;">Контакти</h1>
+  </head>
+  <body>
+    <header>
+      <h1><a class="main_link" href="./index.html">CinemaFan</a></h1>
+      <nav>
+        <a class="movies_link" href="./movies.html">Фільми</a>
+        <a class="my_tickets_link" href="./my_tickets.html">Мої квитки</a>
+        <a class="contacts_link" href="./contacts.html">Контакти</a>
+        <a class="about_link" href="./about.html">Про нас</a>
+      </nav>
+    </header>
+    <h1
+      style="
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 40px;
+        margin: 80px;
+      "
+    >
+      Контакти
+    </h1>
 
-<main class="contacts_container">
-    <div class="contacts">
-        <ul h3>Our contacts</h3>>
-            <li>San Joe St.</li>
-            <li>00-1212121-11</li>
-            <li>mail@mail.com</li>
-        </ul>
-    </div>
-    <div>
-        <form class="form">
-            <h2>Напишіть нам</h2>
-            <p type="Ім'я:"><input placeholder="Напишіть своє ім'я тут.."></input></p>
-            <p type="Пошта:"><input placeholder="Вкажіть свою пошту.."></input></p>
-            <p type="Повідомлення:"><input placeholder="Що ви хочете написати.."></input></p>
-            <button>Відправити</button>
-        </form>
-    </div>
-</main>
-
-
-<footer style="font-family: 'Montserrat';
-    font-size: 22px;">
-    <div class="footer_logo">
-        <div><a href="/">CinemaFun</a></div>
-    </div>
-    <div class="footer_links">
+    <main class="contacts_container">
+      <div class="contacts">
         <ul>
-            <li><a href="movies.html">Фільми</a></li>
-            <li><a href="my_tickets.html">Мої квитки</a></li>
-            <li><a href="about.html">Про нас</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
+          <h3>Our contacts</h3>
+          >
+          <li>San Joe St.</li>
+          <li>00-1212121-11</li>
+          <li>mail@mail.com</li>
         </ul>
-    </div>
-    <div class="footer_copyright">
-        <p>@2022 Сервіс онлайн купвілі квитків у кінотеатр CinemaFan <a href="/">cinemafan.com</a></p>
-    </div>
-</footer>
-</body>
+      </div>
+      <div>
+        <form class="form">
+          <h2>Напишіть нам</h2>
+          <p type="Ім'я:">
+            <input placeholder="Напишіть своє ім'я тут.." />
+          </p>
+          <p type="Пошта:">
+            <input placeholder="Вкажіть свою пошту.." />
+          </p>
+          <p type="Повідомлення:">
+            <input placeholder="Що ви хочете написати.." />
+          </p>
+          <button>Відправити</button>
+        </form>
+      </div>
+    </main>
+
+    <footer style="font-family: 'Montserrat'; font-size: 22px">
+      <div class="footer_logo">
+        <div><a href="/">CinemaFun</a></div>
+      </div>
+      <div class="footer_links">
+        <ul>
+          <li><a href="movies.html">Фільми</a></li>
+          <li><a href="my_tickets.html">Мої квитки</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer_copyright">
+        <p>
+          @2022 Сервіс онлайн купвілі квитків у кінотеатр CinemaFan
+          <a href="/">cinemafan.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
