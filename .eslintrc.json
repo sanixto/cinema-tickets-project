@@ -5,7 +5,8 @@
     },
     "extends": [
         "standard", 
-        "plugin:sonarjs/recommended"
+        "plugin:sonarjs/recommended",
+        "prettier"
     ],
     "overrides": [
     ],
