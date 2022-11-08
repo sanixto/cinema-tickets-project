@@ -12,6 +12,8 @@
     "lint:fix": "eslint --ignore-path .gitignore --fix .",
     "format": "prettier --ignore-path .gitignore --check .",
     "format:fix": "prettier --ignore-path .gitignore --write .",
+    "stylelint": "stylelint --ignore-path .gitignore \"**/*.css\"",
+    "stylelint:fix": "stylelint --ignore-path .gitignore \"**/*.css\" --fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -35,6 +37,11 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-sonarjs": "^0.16.0",
     "husky": "^8.0.1",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-order-config-standard": "^0.1.3"
   }
 }

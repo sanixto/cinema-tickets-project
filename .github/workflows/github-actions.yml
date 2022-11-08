@@ -26,3 +26,6 @@ jobs:
 
       - name: Format
         run: npm run format
+
+      - name: Stylelint
+        run: npm run stylelint
