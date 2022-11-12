@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Розклад сеансів</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -19,7 +20,9 @@
 display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
+  
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -47,13 +50,22 @@ display: grid;
 </head>
 <body>
         <header>
+            <div class="header_links">
             <h1><a class="main_link" href="./index.html">CinemaFan</a></h1>
-            <nav>
-                <a class="movies_link" href="./movies.html">Фільми</a>
-                <a class="my_tickets_link" href="./my_tickets.html">Мої квитки</a>
-                <a class="contacts_link" href="./contacts.html">Контакти</a>
-                <a class="about_link" href="./about.html">Про нас</a>
-            </nav>
+            <!-- links, that will be headen in burger-->
+                <div id="hidden_links">
+                    <nav>
+                    <a class="movies_link" href="./movies.html">Фільми</a>
+                    <a class="my_tickets_link" href="./my_tickets.html">Мої квитки</a>
+                    <a class="contacts_link" href="./contacts.html">Контакти</a>
+                    <a class="about_link" href="./about.html">Про нас</a>
+                    </nav>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a id="burger_button" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </header>
     <div class="movies_main"><h1>Розклад сеансів</h1>
     <!--Розклад фільмів-->
@@ -63,7 +75,7 @@ display: grid;
     <div class="row">
         <div class="column">
             <div class="schedule_poster">
-                <img src="/images/movie_posters/Drive_poster.jpg", style="width:100%; max-width:120px">
+                <img src="/images/movie_posters/Drive_poster.jpg", style="width:100%; max-width:160px; min-width:160px">
                             <div class="schedule_title">
                                 <h3>Драйв</h3>
                             </div>
@@ -82,7 +94,7 @@ display: grid;
 
         <div class="column">
             <div class="schedule_poster">
-                <img src="/images/movie_posters/The_place_beyond_the_pines_poster.jpg" , style="width:100%; max-width:120px">
+                <img src="/images/movie_posters/The_place_beyond_the_pines_poster.jpg" , style="width:100%; max-width:160px">
                 <div class="schedule_title">
                     <h5>Місце під <br>соснами</h5>
                 </div>
@@ -97,7 +109,7 @@ display: grid;
         </div>
         <div class="column">
             <div class="schedule_poster">
-                <img src="/images/movie_posters/Blade_runner_2049_poster.jpg" , style="width:100%; max-width:120px">
+                <img src="/images/movie_posters/copy_Blade_runner_2049_poster.jpg" , style="width:100%; max-width:160px">
                 <div class="schedule_title">
                     <h5>Той, що біжить<br> по лезу</h5>
                 </div>
@@ -133,5 +145,7 @@ display: grid;
         <p>@2022 Сервіс онлайн купвілі квитків у кінотеатр CinemaFan <a href="/">cinemafan.com</a></p>
     </div>
 </footer>
+
+<script src="../js/main.js"></script>
 
 </body>

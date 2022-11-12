@@ -1,6 +1,6 @@
 header, body, footer{
     padding: 0;
-        margin: 0;
+    margin: 0;
 }
 header {
     background-color: orange;
@@ -10,6 +10,9 @@ header {
     padding: 0px;
     margin:0px;
 }
+
+
+
 /* Color of main*/
 div.index_main {
     background-color: rgb(219, 218, 218);
@@ -90,51 +93,83 @@ div.movies_main {
         a.movies_link:active {
             text-decoration: none;
         }
+        a.movies_link:hover,
+        a.movies_link:visited,
+        a.movies_link:link,
+        a.movies_link:active {
+            text-decoration: none;
+        }
 
+
+/* Burger button style*/
+a.burger_button {
+        right: 0;
+        color: black;
+
+}
 /* Style for Main Movies and their dates*/
-div.main_movies_name {
+div.main_movies_name_date {
 color: #f2f2f2;
     font-family: 'Montserrat';
     font-size: 22px;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 50px;
+    bottom: 5px;
     width: 100%;
     text-align: center;
+    background-color: black;
+    opacity: 0.5;
     
 }
-/* Фльми на головній сторінці/їх назва */
-.main_movies_name:hover {
-    background-color: #a0a0a0;
-    color: black;
-    opacity: 0.7;
-    transition-duration: 1s;
-}
-/* Фльми на головній сторінці/їх дата */
-div.main_movies_date {
-    color: #f2f2f2;
-    font-family: 'Montserrat';
-    font-size: 16px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 1px;
-    width: 100%;
-    text-align: center;
-    transition-duration: 1s;
-}
 
-.main_movies_date:hover {
-    background-color: #a0a0a0;
-    color: black;
-    opacity: 0.7;
-}
+
+
 /* Making inline movie schedule*/
 div.schedule_poster {
-    width: 50%;
-        height: 300px;
+    width: 100%;
+    position: relative;
+        height: 250px;
         white-space: nowrap;
         overflow-x: auto;
         padding: 10px;
+        align-self:stretch;
+    
+
+}
+div.schedule_title {
+    position: absolute;
+        bottom: 10px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 0;
+}
+
+/*З'являється назва фільму, при наводженні мишкою*/
+div.schedule_title:hover {
+    opacity: 0.6;
+    width: 120px;
+    height: 100px;
+}
+
+/*Making uselectable text*/
+div.schedule_title {
+-webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 div.movie_schedule {
@@ -146,7 +181,7 @@ div.movie_schedule {
 /* making line*/
 div.column {
     border-bottom: 2px solid #ffa94d;
-    padding: 1em;
+    padding: 0em;
     vertical-align: middle;
 }
 
@@ -186,73 +221,71 @@ div.row {
     max-width: 80%;
     margin-left: 150px;
 }
-/*
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
-body {
-    font-family: 'Alegreya Sans', sans-serif;
+
+/*Hiding burger button */
+a.i {
+    display:none;
+
 }
 
-/* Sticky footer position and size
--------------------------------------------------- 
-html {
-    position: relative;
-    min-height: 100%;
+
+/*design for iPad*/
+@media screen and (max-width: 834px) {
+    div.row {
+        margin-left: 0px;
+        max-width: 100%
+    }
 }
 
-body {
-    /* Margin bottom by footer height 
-    margin-bottom: 300px;
-}
+@media screen and (max-width: 700px) {
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 99%;
-    /* Set the fixed height of the footer here 
-    height: 300px;
-}
+/* Making burger menu */
+    /* Burger button style*/
+    a.burger_button {
+        right: 0;
+        color: black;
 
-/* Taller footer on small screens 
-@media (max-width: 567em) {
-    body {
-        margin-bottom: 300px;
     }
 
-    .footer {
+    a.i {
+        
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .header_links #hidden_links {
+        display: none;
+    }
+
+    /* Style the navigation menu */
+    .header_links {
+        overflow: hidden;
+    }
+
+    .header_links.a {
+        display: block
+    }
+
+
+
+    ul.movie_schedule {
+            display: none;
+        }
+    .column {
+        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.schedule_poster {
         height: 250px;
-    }
+        white-space: nowrap;
+        overflow-x: auto;
+        padding: 58px;
+        padding: 1px;
+        align-self: stretch;
+        }
 }
 
-/* Sticky footer style and color
--------------------------------------------------- 
-footer {
-    padding-top: 30px;
-    background-color: #292c2f;
-    color: #bbb;
-}
-
-footer a {
-    color: #999;
-    text-decoration: none;
-}
-
-footer a:hover,
-footer a:focus {
-    color: #aaa;
-    text-decoration: none;
-    border-bottom: 1px dotted #999;
-}
-
-footer .form-control {
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
-}
-*/
+/* Footer design */
 footer {
     display: grid;
     grid-template-areas: "logo links"

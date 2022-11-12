@@ -3,10 +3,29 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мої квитки</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
+<style>
+
+    div.tickets_column {
+        margin-left: 80px;
+        margin-right: 80px;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px 0;
+        border-bottom: 2px solid #ffa94d;
+    }
+
+    span {
+        padding: 10px 0;
+    }
+</style>
 <body>
         <header>
             <h1><a class="main_link" href="./index.html">CinemaFan</a></h1>
@@ -19,6 +38,97 @@
         </header>
     <h1 style="font-family: 'Montserrat';
     font-size: 22px;">Мої квитки</h1>
+
+    <div class="my_tickets">
+        <div class="tickets_row">
+            <div class="tickets_column">
+                <span class="tickets_title">
+                    <ul>Назва фільму: 
+                        <li>Драйв</li>
+                    </ul>
+                </span>
+                <span class="tickets_time">
+                    <ul>Дата та Час: 
+                        <li>14 грудня</li>
+                        <li>14:00</li>
+                    </ul>
+                </span>
+                <span class="tickets_place">
+                    <ul>Місце в залі: 
+                        <li style="color: red;">Червоний зал</li>
+                        <li>14 Ряд</li>
+                        <li>14 Місце</li>
+                    </ul>
+                </span>
+                <span class="tickets_price">
+                    <ul>Ціна:
+                        <li>140 грн</li>
+                    </ul>
+                </span>
+
+                <span><button class="button" id="Cancel" onclick="">Скасувати</button>
+                </span>
+
+            </div>
+<div class="tickets_column">
+    <span class="tickets_title">
+        <ul>Назва фільму:
+            <li>Той, що біжить по лезу</li>
+        </ul>
+    </span>
+    <span class="tickets_time">
+        <ul>Дата та Час:
+            <li>14 грудня</li>
+            <li>14:00</li>
+        </ul>
+    </span>
+    <span class="tickets_place">
+        <ul>Місце в залі:
+            <li style="color: blue;">Синій зал</li>
+            <li>14 Ряд</li>
+            <li>14 Місце</li>
+        </ul>
+    </span>
+    <span class="tickets_price">
+        <ul>Ціна:
+            <li>140 грн</li>
+        </ul>
+    </span>
+
+    <span><button class="button" id="Cancel" onclick="">Скасувати</button>
+    </span>
+</div>
+<div class="tickets_column">
+    <span class="tickets_title">
+        <ul>Назва фільму:
+            <li>Місце під соснами</li>
+        </ul>
+    </span>
+    <span class="tickets_time">
+        <ul>Дата та Час:
+            <li>14 грудня</li>
+            <li>14:00</li>
+        </ul>
+    </span>
+    <span class="tickets_place">
+        <ul>Місце в залі:
+            <li style="color: green;">Зелений зал</li>
+            <li>14 Ряд</li>
+            <li>14 Місце</li>
+        </ul>
+    </span>
+    <span class="tickets_price">
+        <ul>Ціна:
+            <li>140 грн</li>
+        </ul>
+    </span>
+
+    <span><button class="button" id="Cancel" onclick="">Скасувати</button>
+    </span>
+
+</div>
+        </div>
+    </div>
 
 <footer style="font-family: 'Montserrat';
     font-size: 22px;">

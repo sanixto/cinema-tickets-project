@@ -3,21 +3,18 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/acc2505e0d.js" crossorigin="anonymous"></script>
     <style>
-.contacts_container {
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.contacts_container div{
-    flex: 1;
+.contacts {
+
 }
 .form {
-    width:80%;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 120px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative
+    width:640px;height:540px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 120px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative
 }
 input {
     width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2
@@ -52,16 +49,16 @@ button:hover{
     margin: 80px;">Контакти</h1>
 
 <main class="contacts_container">
-    <div class="contacts">
-        <ul h3>Our contacts</h3>>
-            <li>San Joe St.</li>
-            <li>00-1212121-11</li>
-            <li>mail@mail.com</li>
-        </ul>
-    </div>
     <div>
         <form class="form">
             <h2>Напишіть нам</h2>
+            <div class="contacts">
+                <ul h3>Наші Контакти</h3>
+                    <li>Київ</li>
+                    <li>00-1212121-11</li>
+                    <li>cinemafan@mail.com</li>
+                </ul>
+            </div>
             <p type="Ім'я:"><input placeholder="Напишіть своє ім'я тут.."></input></p>
             <p type="Пошта:"><input placeholder="Вкажіть свою пошту.."></input></p>
             <p type="Повідомлення:"><input placeholder="Що ви хочете написати.."></input></p>
