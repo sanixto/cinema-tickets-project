@@ -83,7 +83,7 @@ a.contacts-link:active {
 a.my-tickets-link:hover,
 a.my-tickets-link:visited,
 a.my-tickets-link:link,
-a:active {
+a.my-tickets-link:active {
   text-decoration: none;
 }
 
