@@ -75,3 +75,12 @@ main section {
   color: #fff;
   background-color: #6c757d;
 }
+
+.feedback {
+  background-color: #e2dddd;
+}
+.feedback input,
+.feedback textarea {
+  background-color: #ccc;
+  border: 0;
+}
