@@ -84,3 +84,13 @@ main section {
   background-color: #ccc;
   border: 0;
 }
+
+.film-page button {
+  color: #343434;
+  border: solid #6c757d 1px;
+  border-radius: 1px;
+}
+.film-page button:hover {
+  color: #e2dddd;
+  background-color: #6c757d;
+}
