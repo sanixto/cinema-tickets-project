@@ -2,6 +2,7 @@
   "name": "cinema-tickets-project",
   "version": "1.0.0",
   "description": "a website for the sale of cinema tickets",
+  "type": "module",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -17,7 +18,7 @@
     "prepare": "husky install"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/sanixto/cinema-tickets-project.git"
   },
   "keywords": [
